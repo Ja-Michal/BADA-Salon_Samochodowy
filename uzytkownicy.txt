@@ -1,0 +1,25 @@
+Perspektywy:
+	Kierownik (zarządzanie salonem) - dostep do wszstkich danych
+	Pracownik (każda osoba zatrudniona) - swoje dane osobowe, stanowisko, wynagrodzenie
+	Mechanik (naprawa samochodów) - informacje o serwisach
+	Handlarz (spedaż i wynajem samochodów)- informacje o samochodach
+	Kierownik warsztatów (zarządzanie serwisowaniem samochodów) - informacje o samochodach, inforacje o serwisach, informacje o warsztatach
+
+Operacje na danych:
+	W obszarze pracowników:
+		-dodawanie usówanie pracownika
+		-modyfikacja danych osobowych
+		-zmiana satnowiska
+		-zmiana wynagrodzenia
+		-zmiana przypisanej placówki
+	W obszarze placówek:
+		-dodawanie usówanie placówek
+		-modyfikacja adresu, nazwy
+		-przypisywanie pracowników i samochodów (jeżeli punk sprzedaży)
+		-modyfikacja cech specjalnych placówki
+	W obszarze samochodów:
+		-dodawanie usówanie samchodów
+		-zmaina przypisanej placówki
+		-zmiana numeru rejestracyjnego
+		-zmiana stanu technicznego, przbiegu
+	
