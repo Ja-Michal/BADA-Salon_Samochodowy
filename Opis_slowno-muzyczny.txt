@@ -1,0 +1,25 @@
+Baza danych - salon samochodowy.
+
+Założenia:
+Baza danych dotyczy sieci salonów samochodowych (dalej zwana salonem samochodowym), 
+zajmujących się sprzedażą i wypożyczaniem samochodów, a także serwisującym posiadane i sprzedane samochody.
+
+Salon posiada placówki będące warsztatem lub punktem handlowym.
+	W placówce typu warsztat mogą odbywać się serwisy.
+	
+Salon zatrudnia pracowników, z których większość jest przypisana do placówek w placówkach.
+	Pracownik może pracować przy serwisie samochodu.
+	
+Salon posiada samochody znajdujące się w poszczególnych placówkach.
+	Samochody mogą być sprzedawane i wypożyczane.
+	Pojedynczy klient może dokonać zakupu samochodu.
+	Samochód może być wynajmowany przez wielu klientów na przestrzeni czasu.
+	Posiadany samochód może być serwisowany.
+	Sprzedany samochód może być serwisowany.
+
+Serwis samochodu musi odbywać się w określonej placówce i być wykonywany przez określona grupę pracowników.
+
+Klient jest klientem salonu, mogącym korzystać z usług danej placówki.
+	Klient może kupować samochody.
+	Klient może wynajmować samochody.
+	Klient może serwisować zakupiony samochód.
