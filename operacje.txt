@@ -1,0 +1,26 @@
+Operacje na danych:
+    W obszarze pracowników:
+        -dodawanie usuwanie pracownika
+        -modyfikacja danych osobowych
+        -zmiana stanowiska
+        -zmiana wynagrodzenia
+        -zmiana przypisanej placówki
+    W obszarze placówek:
+        -dodawanie usuwanie placówek
+        -modyfikacja adresu, nazwy
+        -przypisywanie pracowników i samochodów (jeżeli punk sprzedaży)
+        -modyfikacja cech specjalnych placówki
+    W obszarze samochodów:
+        -dodawanie usuwanie samochodów
+        -zmiana przypisanej placówki
+        -zmiana numeru rejestracyjnego
+        -zmiana stanu technicznego, przebiegu
+W obszarze klientów:
+       -dodawanie usuwanie,
+       -zmiana danych
+       -przypisywanie samochodu
+        -przypisywanie do placówki
+W obszarze serwisów:
+         -dodawanie usuwanie serwisów
+          -przypisywanie pracowników 
+          -przypisywanie samochodów i klientów
