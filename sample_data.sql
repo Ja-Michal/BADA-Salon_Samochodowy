@@ -148,3 +148,15 @@ insert into wynagrodzenia (data, kwota, kwota_dod, id_pracownika) values
 (to_date('2024-11-30', 'YYYY-MM-DD'), 6000.00, 500.00, 3);
 insert into wynagrodzenia (data, kwota, kwota_dod, id_pracownika) values
 (to_date('2024-11-30', 'YYYY-MM-DD'), 700.00, 300.00, 4);
+
+-- Wyszukamnie wszystkich autb w placówkach w Warszawie
+select * from samochody S join modele M on (M.id_modelu = S.id_modelu) join marki MA on (MA.id_marki = M.id_marki)
+where S.ID_placowki IN (Select ID_placowki from placowki P join adresy A on (P.id_adresu = A.id_adresu) where A.miasto Like 'Warszawa');
+
+-- Sprawdzanie ile razy byl serwisowany dany samochód
+Select A.id_samochodu ,count(*) from serwisy S join samochody A on (S.id_samochodu = A.id_samochodu)
+Group by A.id_samochodu;
+
+-- Dodanie samochodu istniejacego typu (np. Warszawty):
+insert into samochody (Numer_rejestracyjny, data_produkcji, przebieg, waznosc_przegladu,stan_techniczny,czy_powypadkowy,cena_sprzedazy,id_placowki,id_modelu) values
+('WD2137', to_date('1984-11-30', 'YYYY-MM-DD'), 70, to_date('2025-11-30', 'YYYY-MM-DD'),'wymaga serwisu','T',90000,1,(Select id_modelu from modele where nazwa_modelu Like 'Warszawa'));
